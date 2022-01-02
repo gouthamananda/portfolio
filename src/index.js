@@ -15,6 +15,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
     <CssBaseline/>
+    {/* used hash router */}
     <HashRouter>
     <App />
     </HashRouter>
