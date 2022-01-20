@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Paper, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 import bgImage from "../../Assets/pic2.jpg";
 
 export default function Story() {
