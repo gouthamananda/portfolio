@@ -28,6 +28,7 @@ const toggleDrawer = (value) => (event) => {
       backgroundSize:"cover",
     }}
     >
+       
       <Header
       open={drawerOpen}
       toggleDrawer={toggleDrawer}
@@ -37,7 +38,8 @@ const toggleDrawer = (value) => (event) => {
       toggleDrawer={toggleDrawer}
       setDrawerOpen={setDrawerOpen}
       />
-      <Router/> 
+       <Router/> 
+    
     </div>
        
   );
