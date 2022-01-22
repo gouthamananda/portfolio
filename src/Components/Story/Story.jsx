@@ -88,9 +88,9 @@ export default function Story() {
           <p>
             Looking back to those 2 years, present day, I have not just lived my
             life but I have survived. Be it my part-time job as a Mover, Walmart
-            job, or my summer factory job, my managers tell me “ Goutham, YOU
-            ARE THE BEST!”. And that’s what I tell myself every day. I am the
-            best! Thank you for reading till the end.{" "}
+            job, or my summer job, my managers tell me “ Goutham, YOU ARE THE
+            BEST!”. And that’s what I tell myself every day. I am the best!
+            Thank you for reading till the end.{" "}
           </p>{" "}
         </Typography>
       </Box>
