@@ -9,7 +9,7 @@ const NavbarLinks=[
     {text:'Home',path:'/',icon:<HomeIcon/>},
     {text:'My Story',path:'/story',icon:<ContactIcon/>},    
     {text:'Projects',path:'/projects',icon:<ProjectIcon/>},
-    {text:'MSC PATRAN & MASTRAN',path:'/msc',icon:<MSCIcon/>},
+    {text:'MSC PATRAN & NASTRAN',path:'/msc',icon:<MSCIcon/>},
     {text:'ABAQUS',path:'/abacus',icon:<ProjectIcon/>},
     {text:'Aeroelasticity',path:'/aero',icon:<ProjectIcon/>},
     {text:'Blog',path:'/blog',icon:<BlogIcon/>},       

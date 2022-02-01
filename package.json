@@ -1,5 +1,4 @@
 {
-  
   "name": "goutham-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +15,7 @@
     "http-server": "^14.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-player": "^2.9.0",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "styled-components": "^5.3.3",
