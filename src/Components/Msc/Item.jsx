@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from "react-player/lazy";
 import { Box, Typography } from "@mui/material";
 
 export default function Item({ t, p, v }) {
@@ -40,7 +41,7 @@ export default function Item({ t, p, v }) {
       </Box>
 
       <Box sx={{ gridArea: "video" }}>
-        <Box
+        {/* <Box
           component="img"
           src={v}
           sx={{
@@ -51,7 +52,8 @@ export default function Item({ t, p, v }) {
               alignItems: "center",
             },
           }}
-        />
+        /> */}
+        <ReactPlayer url={v} playing muted loop />
       </Box>
     </Box>
   );

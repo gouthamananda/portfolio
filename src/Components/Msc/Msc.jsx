@@ -2,7 +2,7 @@ import React from "react";
 import { Paper } from "@mui/material";
 
 import p1 from "../../Assets/p1.jpg";
-import v1 from "../../Assets/v1.gif";
+import v1 from "../../Assets/v1.mp4";
 import Item from "./Item";
 
 function Msc() {
