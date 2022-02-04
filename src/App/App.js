@@ -2,7 +2,7 @@ import Router from '../Router';
 import Header from '../Components/Header/Header';
 import Drawer from '../Components/Drawer/Drawer';
 import { useState } from 'react';
-import svg from '../Assets/white.svg';
+import svg from '../Assets/w1.svg';
 
 
 function App() {

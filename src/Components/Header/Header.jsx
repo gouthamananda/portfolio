@@ -6,12 +6,12 @@ import {
   Container,
   Toolbar,
   Button,
-  Avatar,
   IconButton,
 } from "@mui/material";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
-import pic from "../../Assets/profile.png";
+import { ImLinkedin } from "react-icons/im";
 
 export default function Header({ toggleDrawer }) {
   const navigate = useNavigate();
@@ -26,18 +26,13 @@ export default function Header({ toggleDrawer }) {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Avatar
-            alt="Goutham Ananda"
-            src={pic}
-            onClick={() => {
-              navigate("/");
-            }}
-            sx={{
-              width: 50,
-              height: 50,
-              cursor: "pointer",
-            }}
-          />
+          <Box
+            sx={{ color: "primary.main", fontSize: 25 }}
+            component="a"
+            href="https://www.linkedin.com/in/gouthamananda/"
+          >
+            <ImLinkedin />
+          </Box>
           <Box
             sx={{
               flex: 1,

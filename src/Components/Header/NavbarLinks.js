@@ -1,6 +1,5 @@
 import HomeIcon from '@mui/icons-material/Home';
 import ProjectIcon from '@mui/icons-material/AccountTree';
-import BlogIcon from '@mui/icons-material/Book';
 import ContactIcon from '@mui/icons-material/ContactPage';
 import StoryIcon from '@mui/icons-material/AutoStories';
 import MSCIcon from '@mui/icons-material/Handyman';
@@ -10,9 +9,7 @@ const NavbarLinks=[
     {text:'My Story',path:'/story',icon:<ContactIcon/>},    
     {text:'Projects',path:'/projects',icon:<ProjectIcon/>},
     {text:'MSC PATRAN & NASTRAN',path:'/msc',icon:<MSCIcon/>},
-    {text:'ABAQUS',path:'/abacus',icon:<ProjectIcon/>},
-    {text:'Aeroelasticity',path:'/aero',icon:<ProjectIcon/>},
-    {text:'Blog',path:'/blog',icon:<BlogIcon/>},       
+    {text:'ABAQUS',path:'/abaqus',icon:<ProjectIcon/>},  
     {text:'Contact',path:'/contact',icon:<StoryIcon/>},        
 ];
 
