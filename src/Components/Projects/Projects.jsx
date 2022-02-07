@@ -21,7 +21,7 @@ const StyledMenuItem = styled(Box)(({ theme, isClicked }) => ({
 function I1() {
   return (
     <Box>
-      <Typography align="center" variant="h4">
+      <Typography align="left" variant="h4">
         I am 1
       </Typography>
     </Box>
@@ -37,7 +37,7 @@ function I2() {
 function I3() {
   return (
     <Box>
-      <Typography align="center" variant="h4">
+      <Typography align="left" variant="h4">
         I am 3
       </Typography>
     </Box>
@@ -57,7 +57,7 @@ function LoadItem(props) {
       return <I4 />;
     default:
       return (
-        <Typography align="center" variant="h4" sx={{ color: "red" }}>
+        <Typography align="left" variant="h4" sx={{ color: "red" }}>
           {" "}
           Please select any project
         </Typography>

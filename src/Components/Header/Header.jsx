@@ -11,7 +11,7 @@ import {
 
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate } from "react-router-dom";
-import { ImLinkedin } from "react-icons/im";
+import { ImLinkedin, ImMobile } from "react-icons/im";
 
 export default function Header({ toggleDrawer }) {
   const navigate = useNavigate();
@@ -32,6 +32,13 @@ export default function Header({ toggleDrawer }) {
             href="https://www.linkedin.com/in/gouthamananda/"
           >
             <ImLinkedin />
+          </Box>
+          <Box
+            sx={{ color: "primary.main", fontSize: 25, mx: 1 }}
+            component="a"
+            href="tel:+15149231564"
+          >
+            <ImMobile />
           </Box>
           <Box
             sx={{
