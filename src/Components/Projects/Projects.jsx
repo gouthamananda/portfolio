@@ -3,6 +3,7 @@ import { Box, Container, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import v4 from "../../Assets/v4.gif";
 import I4 from "./I4";
+import I1 from "./I1";
 
 const StyledMenuItem = styled(Box)(({ theme, isClicked }) => ({
   background: isClicked ? theme.palette.primary.main : "white",
@@ -16,17 +17,9 @@ const StyledMenuItem = styled(Box)(({ theme, isClicked }) => ({
   },
   margin: "10px 0",
   width: "60%",
+  fontSize: { xs: ".8rem", md: "2rem", lg: "2.5rem" },
 }));
 
-function I1() {
-  return (
-    <Box>
-      <Typography align="left" variant="h4">
-        I am 1
-      </Typography>
-    </Box>
-  );
-}
 function I2() {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
@@ -57,7 +50,7 @@ function LoadItem(props) {
       return <I4 />;
     default:
       return (
-        <Typography align="left" variant="h4" sx={{ color: "red" }}>
+        <Typography align="center" variant="h4" sx={{ color: "red" }}>
           {" "}
           Please select any project
         </Typography>

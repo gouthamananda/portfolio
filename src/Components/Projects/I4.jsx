@@ -17,12 +17,22 @@ export default function I4() {
       <Typography
         align="center"
         variant="h3"
-        sx={{ textTransform: "uppercase", fontWeight: 400 }}
+        sx={{
+          textTransform: "uppercase",
+          fontWeight: 600,
+          fontSize: { xs: ".8rem", md: "2rem", lg: "2.5rem" },
+        }}
       >
         4.Design-Build Test Stiffened panel
       </Typography>
 
-      <Box sx={{ display: "flex", my: 2 }}>
+      <Box
+        sx={{
+          display: "flex",
+          my: 2,
+          flexDirection: { xs: "column", md: "row" },
+        }}
+      >
         <Box
           sx={{
             display: "flex",

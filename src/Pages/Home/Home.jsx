@@ -22,7 +22,7 @@ export default function Home() {
         <Typography
           variant="h2"
           component="h1"
-          align="left"
+          align="center"
           sx={{
             color: "text.main",
             fontFamily: "Poppins,sans-serif",
