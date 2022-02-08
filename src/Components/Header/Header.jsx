@@ -20,21 +20,22 @@ export default function Header({ toggleDrawer }) {
       position="static"
       elevation={0}
       sx={{
-        backgroundColor: "transparent",
-        height: "11vh",
+        height: "10vh",
+        backgroundColor: { xs: "transparent", sm: "primary.main" },
+        alignItems: "center",
       }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box
-            sx={{ color: "primary.main", fontSize: 25 }}
+            sx={{ color: "white", fontSize: 25 }}
             component="a"
             href="https://www.linkedin.com/in/gouthamananda/"
           >
             <ImLinkedin />
           </Box>
           <Box
-            sx={{ color: "primary.main", fontSize: 25, mx: 1 }}
+            sx={{ color: "white", fontSize: 25, mx: 1 }}
             component="a"
             href="tel:+15149231564"
           >
@@ -54,7 +55,7 @@ export default function Header({ toggleDrawer }) {
               return (
                 <Button
                   variant="text"
-                  color="primary"
+                  sx={{ color: "white" }}
                   onClick={() => {
                     navigate(page.path);
                   }}
