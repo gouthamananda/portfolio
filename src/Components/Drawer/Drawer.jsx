@@ -41,6 +41,7 @@ export default function Drawer({ open, toggleDrawer, setDrawerOpen }) {
         {menuItems.map((item) => {
           return (
             <ListItem
+              key={item.path}
               color="primary"
               button
               onClick={() => {

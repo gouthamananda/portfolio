@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import v4 from "../../Assets/v4.gif";
+
 import I4 from "./I4";
 import I1 from "./I1";
+import I2 from "./I2";
 
 const StyledMenuItem = styled(Box)(({ theme, isClicked }) => ({
   background: isClicked ? theme.palette.primary.main : "white",
@@ -16,17 +17,10 @@ const StyledMenuItem = styled(Box)(({ theme, isClicked }) => ({
     color: "white",
   },
   margin: "10px 0",
-  width: "60%",
+  width: "80%",
   fontSize: { xs: ".8rem", md: "2rem", lg: "2.5rem" },
 }));
 
-function I2() {
-  return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <Box component="img" src={v4} />
-    </Box>
-  );
-}
 function I3() {
   return (
     <Box>
