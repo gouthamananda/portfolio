@@ -20,14 +20,12 @@ import v4 from "../../Assets/v4.gif";
 
 function Point(props) {
   return (
-    <List dense>
-      <ListItem>
-        <ListItemIcon>
-          <Arrow />
-        </ListItemIcon>
-        <ListItemText primary={props.children} />
-      </ListItem>
-    </List>
+    <ListItem>
+      <ListItemIcon>
+        <Arrow />
+      </ListItemIcon>
+      <ListItemText primary={props.children} />
+    </ListItem>
   );
 }
 
@@ -47,7 +45,11 @@ export default function I2() {
         corrélation avec des essais
       </Typography>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Box component="img" src={v4} sx={{ width: "50%" }} />
+        <Box
+          component="img"
+          src={v4}
+          sx={{ width: { xs: "100%", md: "50%" } }}
+        />
       </Box>
       <Box
         sx={{
@@ -75,33 +77,39 @@ export default function I2() {
           </Box>
         </Box>
         <Box sx={{ flex: 1 }}>
+          <Typography sx={{ fontWeight: 700 }}> OBJECTIVES :</Typography>
           <Typography align="justify" variant="body1">
-            <Typography sx={{ fontWeight: 700 }}> OBJECTIVES :</Typography> To
-            carry out birdstrike simulation on a composite panel located on nose
-            cone ahead of the Aircraft cockpit and compare results with test
-            curves
+            To carry out birdstrike simulation on a composite panel located on
+            nose cone ahead of the Aircraft cockpit and compare results with
+            test curves
+          </Typography>
+          <Typography sx={{ fontWeight: 700 }}> TOOLS USED :</Typography>
+          <Typography align="justify" variant="body1">
+            LS DYNA, Altair Hypermesh
+          </Typography>
+          <Typography sx={{ fontWeight: 700, my: 2 }}>
+            CASE STUDY OVERVIEW :
           </Typography>
           <Typography align="justify" variant="body1">
-            <Typography sx={{ fontWeight: 700 }}> TOOLS USED :</Typography> LS
-            DYNA, Altair Hypermesh
+            The meshed model from Hypermesh was imported and analyzed on
+            LS-DYNA, correlation was carried out using LS-prepost by:
           </Typography>
-          <Typography sx={{ fontWeight: 700, my: 2 }}> OVERVIEW :</Typography>{" "}
-          <Point>
-            Conceptual Design achieved using historical design data and various
-            trade-off studies
-          </Point>
-          <Point>
-            Preliminary detailed design of wing using aerodynamic loads
-          </Point>
-          <Point>All design calculations carried out using excel</Point>
-          <Point>
-            CAD model of the conceptual aircraft created using Solidworks
-          </Point>
-          <Point>Static stress analysis of the wing model using MSC tool</Point>
-          <Point>
-            The power requirements for the design questions the airworthiness of
-            aircraft & credibility of current technology{" "}
-          </Point>
+          <List dense>
+            <Point>Visual comparison of Simulated and actual Test panel</Point>
+            <Point>
+              Identifying Stress concentration regions in metallic components
+              from fringe plots
+            </Point>
+            <Point>Symmetric Loading and central impact check </Point>
+            <Point>
+              Co-relation between Loadcells on LS Dyna with Test Curves
+            </Point>
+            <Point>Peak Value of total forces</Point>
+            <Point>Impulse Force co-relation</Point>
+            <Point>
+              Aluminum Beam Permanent Deformation Comparison with test results.
+            </Point>
+          </List>
         </Box>
       </Box>
     </Box>

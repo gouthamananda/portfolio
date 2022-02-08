@@ -5,6 +5,7 @@ import { styled } from "@mui/material/styles";
 import I4 from "./I4";
 import I1 from "./I1";
 import I2 from "./I2";
+import I3 from "./I3";
 
 const StyledMenuItem = styled(Box)(({ theme, isClicked }) => ({
   background: isClicked ? theme.palette.primary.main : "white",
@@ -20,16 +21,6 @@ const StyledMenuItem = styled(Box)(({ theme, isClicked }) => ({
   width: "80%",
   fontSize: { xs: ".8rem", md: "2rem", lg: "2.5rem" },
 }));
-
-function I3() {
-  return (
-    <Box>
-      <Typography align="left" variant="h4">
-        I am 3
-      </Typography>
-    </Box>
-  );
-}
 
 function LoadItem(props) {
   const { num } = props;

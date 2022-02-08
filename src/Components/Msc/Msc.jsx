@@ -29,7 +29,7 @@ function Msc() {
       <I3 t="(TET10, TET4, HEX8) Tetmesh,(TET10, TET4, HEX8) Isomesh " v={v2} />
       <I2 t="RBE2 vs RBE3" p1={p41} p2={p42} />
       <I1
-        t="Linear Static Analysis of SOL101"
+        t="Linear Static Analysis SOL101"
         p1={v1}
         p2={p21}
         p3={p51}

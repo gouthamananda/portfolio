@@ -13,7 +13,6 @@ export default function Story() {
         p: { sm: 1 },
         m: { xs: 0.5 },
       }}
-      disableGutters
     >
       <Box
         sx={{
@@ -26,7 +25,7 @@ export default function Story() {
         <Typography variant="h3">Two Bags and a Big dream</Typography>
         <Typography
           variant="body2"
-          component="p"
+          component="div"
           sx={{ textAlign: "justify", py: 1 }}
         >
           <p>Check-in Counter, Bangalore Airport (8th September 2019) </p>{" "}

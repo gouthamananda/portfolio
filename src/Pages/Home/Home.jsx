@@ -13,14 +13,12 @@ import ReactPlayer from "react-player/lazy";
 
 function Point(props) {
   return (
-    <List dense>
-      <ListItem>
-        <ListItemIcon>
-          <Arrow />
-        </ListItemIcon>
-        <ListItemText primary={props.children} />
-      </ListItem>
-    </List>
+    <ListItem>
+      <ListItemIcon>
+        <Arrow />
+      </ListItemIcon>
+      <ListItemText primary={props.children} />
+    </ListItem>
   );
 }
 
@@ -34,7 +32,7 @@ export default function Home() {
       spacing={1}
     >
       <Grid
-        xs="12"
+        xs={12}
         sx={{
           display: "flex",
           alignItems: "center",
@@ -80,10 +78,11 @@ export default function Home() {
         spacing={1}
       >
         <Grid
-          xs="12"
-          md="5"
+          xs={12}
+          md={5}
           sx={{
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
             mx: 2,
@@ -92,10 +91,10 @@ export default function Home() {
           order={{ xs: 2, md: 1 }}
           item
         >
-          <Typography align="center">
-            <Typography sx={{ textTransform: "uppercase", fontWeight: 500 }}>
-              Why hire me?
-            </Typography>
+          <Typography sx={{ textTransform: "uppercase", fontWeight: 500 }}>
+            Why hire me?
+          </Typography>
+          <List dense>
             <Point>
               I have more than 2+ years of academic experience in FEA, Designing
               (CAD) using industry-standard tools and am also certified in the
@@ -114,11 +113,11 @@ export default function Home() {
               I never got an opportunity in the industry hence motivating me to
               work hard for the company that invests in me.
             </Point>
-          </Typography>
+          </List>
         </Grid>
         <Grid
-          xs="12"
-          md="6"
+          xs={12}
+          md={6}
           order={{ xs: 1, md: 2 }}
           sx={{
             display: "flex",
@@ -130,6 +129,7 @@ export default function Home() {
           <ReactPlayer
             url="https://www.youtube.com/embed/IlpnJe__zJw"
             width="100%"
+            controls
             playing
           />
         </Grid>

@@ -46,20 +46,20 @@ export default function I4() {
           <Box component="img" src={p63} sx={{ width: "95%" }} />
         </Box>
         <Box sx={{ flex: 1 }}>
+          <Typography sx={{ fontWeight: 700 }}> OBJECTIVES :</Typography>
           <Typography align="justify" variant="body1">
-            <Typography sx={{ fontWeight: 700 }}> OBJECTIVES :</Typography> To
-            design a stiffened panel with constrain dimensions 12 inches for the
-            length, 9 inches for the height and a thickness of 0.032 inch. All
-            stringers should be identical to enhance the load capacity. The
+            To design a stiffened panel with constrain dimensions 12 inches for
+            the length, 9 inches for the height and a thickness of 0.032 inch.
+            All stringers should be identical to enhance the load capacity. The
             material is 2024 aluminum for both stringers and the panel. The
             panel and the stringers are attached by 0.125-inch rivet diameter.
             And verify the result using FEA.
           </Typography>
+          <Typography sx={{ fontWeight: 700 }}> TOOLS USED :</Typography>
           <Typography align="justify" variant="body1">
-            <Typography sx={{ fontWeight: 700 }}> TOOLS USED :</Typography>{" "}
             SOLIDWORKS, ANSYS WORKBENCH, Excel VBA
           </Typography>
-          <Typography sx={{ fontWeight: 700, my: 2 }}> OVERVIEW :</Typography>{" "}
+          <Typography sx={{ fontWeight: 700, my: 2 }}> OVERVIEW :</Typography>
           <TableContainer component={Paper}>
             <Table
               sx={{ minWidth: 650 }}

@@ -69,15 +69,15 @@ export default function I4() {
           <Box component="img" src={p76} sx={{ width: "95%" }} />
         </Box>
         <Box sx={{ flex: 1 }}>
+          <Typography sx={{ fontWeight: 700 }}> OBJECTIVES :</Typography>
           <Typography align="justify" variant="body1">
-            <Typography sx={{ fontWeight: 700 }}> OBJECTIVES :</Typography> To
-            design a next-generation all-electric regional aircraft with the
+            To design a next-generation all-electric regional aircraft with the
             following requirements. Crew: 2 Passengers: 70 Max Takeoff weight:
             35000 lb Range: 1000 miles Ceiling: 25000 ft Take off Distance: &lt;
             3000ft Landing Distance: &lt; 2500ft
           </Typography>
+          <Typography sx={{ fontWeight: 700 }}> TOOLS USED :</Typography>
           <Typography align="justify" variant="body1">
-            <Typography sx={{ fontWeight: 700 }}> TOOLS USED :</Typography>{" "}
             SOLIDWORKS, MSC PATRAN & NASTRAN, Excel
           </Typography>
           <Typography sx={{ fontWeight: 700, my: 2 }}> OVERVIEW :</Typography>{" "}
