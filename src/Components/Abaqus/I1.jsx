@@ -50,10 +50,6 @@ export default function I1(props) {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Box>
           <Typography sx={{ fontWeight: 700 }}> ANALYSIS SUMMARY :</Typography>
-          <Typography align="justify" variant="body1">
-            Design and analysis of UAV wing model for static, Dynamic and
-            Aeroelastic Analysis
-          </Typography>
           <List dense>
             <Point>Aluminium tube, rigid walls</Point>
             <Point>Nonlinearity: plastic strain, Large Deformation ON</Point>
