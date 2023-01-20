@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { CssBaseline } from '@mui/material';
 import { ThemeProvider} from '@mui/material';
 import theme from './Theme';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import App from './App/App';
 import reportWebVitals from './reportWebVitals';
 
@@ -16,9 +16,9 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
     <CssBaseline/>
     {/* used hash router */}
-    <BrowserRouter>
+    <HashRouter>
     <App />
-    </BrowserRouter>
+    </HashRouter>
   </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
